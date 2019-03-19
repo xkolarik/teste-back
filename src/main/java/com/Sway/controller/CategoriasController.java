@@ -14,7 +14,7 @@ import com.Sway.model.Categorias;
 import com.Sway.service.CategoriasService;
 
 @RestController
-@RequestMapping("/api1")
+@RequestMapping("/api")
 public class CategoriasController {
 	
 	@Autowired

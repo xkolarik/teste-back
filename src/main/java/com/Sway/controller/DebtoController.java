@@ -15,6 +15,7 @@ import com.Sway.service.DebtoService;
 import lombok.Data;
 
 @RestController
+@RequestMapping("/api")
 public class DebtoController {
 	
 	@Autowired
@@ -26,7 +27,7 @@ public class DebtoController {
 		return new ResponseEntity<>(debto, HttpStatus.OK);
 	}
 	
-	@RequestMapping("/getGastos")
+	@RequestMapping("/debtos")
 	public Debto getDebto(@RequestParam int id, Data date) {
 		if(date == null) {
 			return debtoService.getById(id);

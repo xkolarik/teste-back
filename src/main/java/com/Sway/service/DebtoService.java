@@ -17,8 +17,8 @@ public class DebtoService {
 	private DebtoRepositorio repositorio;
 	
 	//criar
-	public Debto create(int id, String descricao, double valor, Data date) {
-		return repositorio.save(new Debto(id, descricao, valor, date));
+	public Debto create(Debto debto) {
+		return repositorio.save(debto);
 	}
 	
 	//listar os gastos
